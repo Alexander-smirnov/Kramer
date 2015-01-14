@@ -26,23 +26,15 @@ img {
 	max-width: 100%;
 }
 
-li.twitter, li.instagram, li.facebook {
-	@include gallery (1 of 3);
-	&:last-child {
-		@include last;
-	}
-	min-width: 60px;
-	overflow: hidden;
-	a {
-		display: inline-block;
-		height: 60px;
-		width: 60px;
-		border: 1px solid #fff;
-		@include border-radius(100%);
-		//float: left;
-		font-size: 0;
-		margin: 0 auto;
-	}
+li.twitter a span, li.facebook a span, li.instagram a span {
+	display: inline;
+	font-size: 200%;
+	border: 1px solid #FFF;
+	@include border-radius(100%);
+	padding: 20%;
+}
+li.twitter a:hover , li.facebook a:hover , li.instagram a:hover  {
+	text-decoration: none;
 }
 
 section.video, section#about, section#portfolio, section#team, section#contact, .wrapp_footer {
