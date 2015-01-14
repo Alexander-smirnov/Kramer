@@ -1,0 +1,309 @@
+@import "reset";
+@import "susy";
+@import "compass/css3";
+$susy: (
+	columns: 12,
+	gutters: 3/7,
+	math: fluid,
+	output: float,
+);
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+body {
+	@include border-box-sizing;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h2 {
+	padding: 5% 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+li.twitter a span, li.facebook a span, li.instagram a span {
+	display: inline;
+	font-size: 200%;
+	border: 1px solid #FFF;
+	@include border-radius(100%);
+	padding: 20%;
+}
+li.twitter a:hover , li.facebook a:hover , li.instagram a:hover  {
+	text-decoration: none;
+}
+
+section.video, section#about, section#portfolio, section#team, section#contact, .wrapp_footer {
+	max-width: 1170px;
+	margin: 0 auto;	
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+header {
+	video {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: auto;
+		height: auto;
+		min-width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+	padding: 5% 0;
+	position: relative;
+	background: url("../images/background.png")  no-repeat;
+	background-size: cover;
+	section.header_wrapper {
+		width: 100%;
+		margin: 0 auto;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 100;
+
+		background-color: #33495D;
+		h1 {
+			@include span(4);
+			padding: 2% 0 2% 2%;
+			a.logo {
+				font-size: 0;
+			}
+		}
+		
+		ul.menu {
+			@include span(5 last);
+			margin: 5% 3% 0 0;
+			li {
+				display: inline;
+				padding: 0 2%;
+			}
+		}
+		
+
+	}
+
+		section.video {
+		position: relative;
+		padding-top: 18%;
+		span {
+		clear: both;
+		text-align: center;
+		overflow: hidden;
+		display: block;
+		font-size: 2.5em;
+		color: white;
+		line-height: 1em;
+		padding: 3% 0.5%;
+		position: relative;
+		}
+
+		.explore {
+			position: relative;
+			display: block;
+			@include span(2);
+			float: none;
+			margin: 0 auto;
+			img {
+			@include border-radius(100%);
+			background-color: #2ecc71;
+			padding: 15%;
+			}
+		}
+	}
+	
+}
+
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+main {
+	overflow: hidden;	
+	div.about {	
+		background-color: #33495D;
+		section#about {
+			padding-top: 18%;
+			overflow: hidden;
+			p.temp {
+				@include span (10);
+				float: none;
+				margin: 0 auto;
+			}
+			ul.service {
+				clear: both;
+				padding: 5% 0;
+				@include span(10);
+				float: none;
+				margin: 0 auto;
+				li {
+					padding: 5% 0;
+				}
+				li.services span, li.retina_display span, li.full_support span {
+					font-size: 820%;
+					border: 2px solid #FFF;
+					@include border-radius (100%);
+					padding: 2%;
+				}
+				li h3 {
+					padding-top: 4%;
+				}
+			}
+		}
+	}
+
+
+	div.portfolio {
+		background-color: #fff;
+		section#portfolio {
+			color: #2c3e50;
+			overflow: hidden;
+			padding-top: 18%;
+			ul.navigation {
+				padding: 7% 0 10% 0;
+				float: none;
+				margin: 0 auto;
+				li {
+					display: inline;
+					padding: 0 3% 0;
+				}
+			
+				li a {
+					color: #2c3e50;
+					font-size: 0.75em;
+				}
+				li.active a {
+					color: #fff;
+					padding: 2% 6% 2% 6%;
+					@include border-radius (15%);
+					background-color: #2ecc71;
+				}
+			}
+			ul.example {
+				li:hover {
+					background: url("../images/rollover.png") center center no-repeat;
+					a img {
+						opacity: 0.05;
+						filter: alpha(opacity=5);
+					}
+				}
+			}
+		}
+	}
+	div.team {
+		background-color: #2980b9;
+		section#team {
+			background-color: #2980b9;
+			overflow: hidden;
+			padding-top: 18%;
+			ul.resume li.kramer, ul.resume li.constanza  {
+				overflow: hidden;
+			}
+			ul.resume li p {
+				@include span (10);
+				float: none;
+				margin: 0 auto;
+			}
+
+			ul.pages {
+				@include span (7 of 10);
+				float: none;
+				margin: 0 auto;
+				overflow: hidden;
+				padding: 7% 0;
+			}
+			ul.pages li {
+				display: inline-block;
+				overflow: hidden;
+				padding: 3%;
+				max-height: 60px;
+				a {
+					overflow: hidden;
+				}
+			}
+
+		}
+	}
+	div.contact {	
+		background-color: #fff;
+		section#contact {
+			color: #2c3e50;
+			overflow: hidden;
+			padding-top: 18%;
+			span.contact_us {
+				font-weight: bold;
+			}
+			form {
+				margin: 7% 0;
+				ul.clients li {
+					margin: 5% 0;
+				}
+				ul.clients li label {
+					display: block;
+					margin-bottom: 1%;
+				}
+				ul.clients li input {
+					border: 0;
+					border-bottom: 1px solid #2ecc71;
+				}
+				div input.key {
+					background-color: #2ecc71;
+					border: none;
+					@include border-radius (20%);
+					padding: 2%;
+					color: white;
+				}
+			} 
+			address {
+				padding-bottom: 2%;
+				dl dt {
+				font-weight: bold;
+				padding: 3% 0;
+				}
+			}
+		}
+	}	
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+footer {
+	background-color: #2c3e50;
+	overflow: hidden;
+	.wrapp_footer {	
+		background-color: #2c3e50;
+		overflow: hidden;
+	
+
+		a.logo {
+			display: block;
+			@include span(4);
+			font-size: 0;
+			padding: 2% 0 0 2%;
+		}
+		ul.contacts {
+			clear: both;
+			overflow: hidden;
+			li.footer_list-item {
+				padding: 2%;
+				overflow: hidden;
+			}
+
+		}
+		.contacts .footer_list-item .social {
+			overflow: hidden;
+			li {
+				display: inline-block;
+				overflow: hidden;
+				padding: 3%;
+			}
+		}	
+	}
+}

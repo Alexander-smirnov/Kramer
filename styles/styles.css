@@ -1,0 +1,426 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font: 1em/1em arial, Tahoma, sans-serif;
+  color: #FFFFFF;
+}
+
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+
+select, input, textarea {
+  font-size: 1em;
+  vertical-align: middle;
+}
+
+textarea {
+  vertical-align: top;
+}
+
+:focus {
+  outline: none;
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
+img, fieldset {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a:link, a:visited {
+  font: 1em Tahoma, sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.float-r {
+  float: right !important;
+}
+
+.float-l {
+  float: left !important;
+}
+
+.no-float {
+  float: none !important;
+}
+
+.no-border {
+  border: 0 !important;
+}
+
+.no-bg {
+  background: none !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-display {
+  display: none !important;
+}
+
+.display {
+  display: block !important;
+}
+
+.inline {
+  display: inline !important;
+}
+
+.overflow {
+  overflow: hidden !important;
+}
+
+.align-r {
+  text-align: right !important;
+}
+
+.align-l {
+  text-align: left !important;
+}
+
+.align-c {
+  text-align: center !important;
+}
+
+.clear {
+  clear: both;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+body {
+  margin: 0 auto;
+  text-align: center;
+}
+body *, body *:before, body *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h2 {
+  padding: 5% 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+li.twitter a span, li.facebook a span, li.instagram a span {
+  display: inline;
+  font-size: 200%;
+  border: 1px solid #FFF;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  padding: 20%;
+}
+
+li.twitter a:hover, li.facebook a:hover, li.instagram a:hover {
+  text-decoration: none;
+}
+
+section.video, section#about, section#portfolio, section#team, section#contact, .wrapp_footer {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+header {
+  padding: 5% 0;
+  position: relative;
+  background: url("../images/background.png") no-repeat;
+  background-size: cover;
+}
+header video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+header section.header_wrapper {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #33495D;
+}
+header section.header_wrapper h1 {
+  width: 31.62393%;
+  float: left;
+  margin-right: 2.5641%;
+  padding: 2% 0 2% 2%;
+}
+header section.header_wrapper h1 a.logo {
+  font-size: 0;
+}
+header section.header_wrapper ul.menu {
+  width: 40.17094%;
+  float: right;
+  margin-right: 0;
+  margin: 5% 3% 0 0;
+}
+header section.header_wrapper ul.menu li {
+  display: inline;
+  padding: 0 2%;
+}
+header section.video {
+  position: relative;
+  padding-top: 18%;
+}
+header section.video span {
+  clear: both;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+  font-size: 2.5em;
+  color: white;
+  line-height: 1em;
+  padding: 3% 0.5%;
+  position: relative;
+}
+header section.video .explore {
+  position: relative;
+  display: block;
+  width: 14.52991%;
+  float: left;
+  margin-right: 2.5641%;
+  float: none;
+  margin: 0 auto;
+}
+header section.video .explore img {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background-color: #2ecc71;
+  padding: 15%;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+main {
+  overflow: hidden;
+}
+main div.about {
+  background-color: #33495D;
+}
+main div.about section#about {
+  padding-top: 18%;
+  overflow: hidden;
+}
+main div.about section#about p.temp {
+  width: 82.90598%;
+  float: left;
+  margin-right: 2.5641%;
+  float: none;
+  margin: 0 auto;
+}
+main div.about section#about ul.service {
+  clear: both;
+  padding: 5% 0;
+  width: 82.90598%;
+  float: left;
+  margin-right: 2.5641%;
+  float: none;
+  margin: 0 auto;
+}
+main div.about section#about ul.service li {
+  padding: 5% 0;
+}
+main div.about section#about ul.service li.services span, main div.about section#about ul.service li.retina_display span, main div.about section#about ul.service li.full_support span {
+  font-size: 820%;
+  border: 2px solid #FFF;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  padding: 2%;
+}
+main div.about section#about ul.service li h3 {
+  padding-top: 4%;
+}
+main div.portfolio {
+  background-color: #fff;
+}
+main div.portfolio section#portfolio {
+  color: #2c3e50;
+  overflow: hidden;
+  padding-top: 18%;
+}
+main div.portfolio section#portfolio ul.navigation {
+  padding: 7% 0 10% 0;
+  float: none;
+  margin: 0 auto;
+}
+main div.portfolio section#portfolio ul.navigation li {
+  display: inline;
+  padding: 0 3% 0;
+}
+main div.portfolio section#portfolio ul.navigation li a {
+  color: #2c3e50;
+  font-size: 0.75em;
+}
+main div.portfolio section#portfolio ul.navigation li.active a {
+  color: #fff;
+  padding: 2% 6% 2% 6%;
+  -moz-border-radius: 15%;
+  -webkit-border-radius: 15%;
+  border-radius: 15%;
+  background-color: #2ecc71;
+}
+main div.portfolio section#portfolio ul.example li:hover {
+  background: url("../images/rollover.png") center center no-repeat;
+}
+main div.portfolio section#portfolio ul.example li:hover a img {
+  opacity: 0.05;
+  filter: alpha(opacity=5);
+}
+main div.team {
+  background-color: #2980b9;
+}
+main div.team section#team {
+  background-color: #2980b9;
+  overflow: hidden;
+  padding-top: 18%;
+}
+main div.team section#team ul.resume li.kramer, main div.team section#team ul.resume li.constanza {
+  overflow: hidden;
+}
+main div.team section#team ul.resume li p {
+  width: 82.90598%;
+  float: left;
+  margin-right: 2.5641%;
+  float: none;
+  margin: 0 auto;
+}
+main div.team section#team ul.pages {
+  width: 69.07216%;
+  float: left;
+  margin-right: 3.09278%;
+  float: none;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 7% 0;
+}
+main div.team section#team ul.pages li {
+  display: inline-block;
+  overflow: hidden;
+  padding: 3%;
+  max-height: 60px;
+}
+main div.team section#team ul.pages li a {
+  overflow: hidden;
+}
+main div.contact {
+  background-color: #fff;
+}
+main div.contact section#contact {
+  color: #2c3e50;
+  overflow: hidden;
+  padding-top: 18%;
+}
+main div.contact section#contact span.contact_us {
+  font-weight: bold;
+}
+main div.contact section#contact form {
+  margin: 7% 0;
+}
+main div.contact section#contact form ul.clients li {
+  margin: 5% 0;
+}
+main div.contact section#contact form ul.clients li label {
+  display: block;
+  margin-bottom: 1%;
+}
+main div.contact section#contact form ul.clients li input {
+  border: 0;
+  border-bottom: 1px solid #2ecc71;
+}
+main div.contact section#contact form div input.key {
+  background-color: #2ecc71;
+  border: none;
+  -moz-border-radius: 20%;
+  -webkit-border-radius: 20%;
+  border-radius: 20%;
+  padding: 2%;
+  color: white;
+}
+main div.contact section#contact address {
+  padding-bottom: 2%;
+}
+main div.contact section#contact address dl dt {
+  font-weight: bold;
+  padding: 3% 0;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+footer {
+  background-color: #2c3e50;
+  overflow: hidden;
+}
+footer .wrapp_footer {
+  background-color: #2c3e50;
+  overflow: hidden;
+}
+footer .wrapp_footer a.logo {
+  display: block;
+  width: 31.62393%;
+  float: left;
+  margin-right: 2.5641%;
+  font-size: 0;
+  padding: 2% 0 0 2%;
+}
+footer .wrapp_footer ul.contacts {
+  clear: both;
+  overflow: hidden;
+}
+footer .wrapp_footer ul.contacts li.footer_list-item {
+  padding: 2%;
+  overflow: hidden;
+}
+footer .wrapp_footer .contacts .footer_list-item .social {
+  overflow: hidden;
+}
+footer .wrapp_footer .contacts .footer_list-item .social li {
+  display: inline-block;
+  overflow: hidden;
+  padding: 3%;
+}
