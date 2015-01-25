@@ -1,0 +1,10 @@
+@media (min-width: 769px) {
+  main div.portfolio section#portfolio ul.example {
+    li {
+      @include gallery(4 of 12);
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@media (min-width: 1024px) {
+  div.video {
+    padding-bottom: 56.25%;
+    height: 0;
+    video {
+      display: inline;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+    }
+  }
+}

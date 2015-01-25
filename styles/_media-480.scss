@@ -1,0 +1,101 @@
+@media (min-width: 481px) {
+  ul.menu {
+    @include span(6 of 12 last);
+    //margin-right: span(1 of 12);
+
+    margin: 20px 20px 0 0;
+    li {
+      display: inline-block;
+      padding-right: 2%;
+      text-align: right;
+
+      a {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  main div.about section#about ul.service {
+    @include span(12);
+    li {
+      @include span(4 of 12);
+      &:last-child {
+        margin-right: 0;
+      }
+
+    }
+  }
+
+  main div.portfolio section#portfolio ul.example {
+    overflow: hidden;
+    padding: 3%;
+    li {
+      overflow: hidden;
+      @include gallery(6 of 12);
+      figure {
+        margin: 2% 0;
+      }
+
+    }
+  }
+
+  main div.team section#team ul.resume {
+    li {
+      overflow: hidden;
+      @include gallery(6 of 12);
+      figure {
+        margin: 2% 0;
+      }
+    }
+    ul.pages {
+      width: auto;
+      overflow: hidden;
+      li {
+
+        overflow: hidden;
+        margin: 0 auto;
+        width: auto;
+        text-align: center;
+       }
+    }
+  }
+
+  main div.contact section#contact {
+    form {
+      @include span(7 of 12);
+      margin-right: span(1 of 12);
+      text-align: left;
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+      }
+      margin-left: span(1);
+      }
+
+    dl.contact-details {
+      @include span(3 of 12);
+      margin: 7% 0;
+      text-align: left;
+    }
+  }
+}
+
+footer {
+  text-align: left;
+  ul.contacts {
+    & > li {
+      @include span(3.5 of 12);
+      @include margin-leader(1);
+      margin-right: 0;
+      &:last-child {
+        @include span(5 of 12);
+        margin-right: 0;
+      }
+    }
+  }
+  ul.footer_list-item li {
+    margin-right: 0;
+  }
+}
+

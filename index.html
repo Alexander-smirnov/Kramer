@@ -15,11 +15,14 @@
 </head>
 
 <body>
-	<header>
+	<div class="video">
+
 			<video autoplay="autoplay" loop="loop" poster="images/background.png">
+				<source src="images/main-video.mp4" type="video/mp4">
 				<source src="images/main-video.webm" type="video/webm">
+				<source src="images/main-video.ogv" type="video/ogg">
 			</video>
-		<section class="header_wrapper">
+		<header>
 			<h1>
 				<a class="logo" href="#">
 					<img src="images/Kramer.png" alt="Kramer">
@@ -40,19 +43,19 @@
 					<a href="#contact">Contact</a>
 				</li>
 			</ul>
-		</section>
+		</header>
+
 	    	
-	    <section class="video">
+	    <section class="no_header">
 	    	
-			<span>
+			<h2>
 				Welcome to Kramerica Industries
-			</span>
-			<a class="explore" href="#about">
-				<img src="images/Arrow.png" alt="Explore" />
-				Explore
-			</a>
+			</h2>
+			<a class="explore" href="#about"></a>
+			<span class="point">Explore</span>
 		</section>
-	</header>
+	</div>
+
 	<main>	
 		<div class="about">
 			<section id="about">
@@ -109,22 +112,58 @@
 				</ul>
 				<ul class="example">
 					<li>
-						<a href="#"> <img src="images/Fossil_free_bank.png" alt="Fossil free bank"> </a>
+						<figure>
+							<img src="images/Fossil_free_bank.jpg" alt="Fossil free bank">
+							<figcaption>
+								<h4>Project Title</h4>
+								<a href="#">View Project</a>
+							</figcaption>
+						</figure>
 					</li>
 					<li>
-						<a href="#"> <img src="images/Visit_card.png" alt="Visit card"> </a>
+						<figure>
+							<img src="images/Visit_card.jpg" alt="Visit card">
+							<figcaption>
+								<h4>Project Title</h4>
+								<a href="#">View Project</a>
+							</figcaption>
+						</figure>
 					</li>
 					<li>
-						<a href="#"> <img src="images/Southeast.png" alt="SouthEast"> </a>
+						<figure>
+							<img src="images/Southeast.jpg" alt="SouthEast">
+							<figcaption>
+								<h4>Project Title</h4>
+								<a href="#">View Project</a>
+							</figcaption>
+						</figure>
 					</li>
 					<li>
-						<a href="#"> <img src="images/alyoop.png" alt="Alyoop"> </a>
+						<figure>
+							<img src="images/alyoop.jpg" alt="Alyoop">
+							<figcaption>
+								<h4>Project Title</h4>
+								<a href="#">View Project</a>
+							</figcaption>
+						</figure>
 					</li>
 					<li>
-						<a href="#"> <img src="images/+350.png" alt="+350.org Australia"> </a>
+						<figure>
+							<img src="images/+350.jpg" alt="+350.org Australia">
+							<figcaption>
+								<h4>Project Title</h4>
+								<a href="#">View Project</a>
+							</figcaption>
+						</figure>
 					</li>
 					<li>
-						<a href="#"> <img src="images/take_action_today.png" alt="Take action today"> </a>
+						<figure>
+							<img src="images/take_action_today.jpg" alt="Take action today">
+							<figcaption>
+								<h4>Project Title</h4>
+								<a href="#">View Project</a>
+							</figcaption>
+						</figure>
 					</li>
 				</ul>
 			</section>
@@ -186,32 +225,29 @@
 				<form action="#">
 					<ul class="clients">
 						<li>
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
+							<input type="text" name="name" placeholder="Name">
 						</li>
 						<li>
-							<label for="email">Email</label>
-							<input type="email" name="email" id="email" />
+							<input type="email" name="email" placeholder="Email">
 						</li>
 						<li>
-							<label for="message">Message</label>
-							<textarea name="message" id="message"> </textarea>
+							<textarea name="message" placeholder="Message" ></textarea>
 						</li>
 					</ul>
+
 					<div>
 						<input class="key" type="submit" value="Submit" />
 					</div>	
 				</form>
-				<address>
-					<dl>
-						<dt>Address</dt>
+				<dl class="contact-details">
+					<dt>Address</dt>
 						<dd>129 West 81st Street New York, NY 10024</dd>
-						<dt>Email</dt>
-						<dd>giddyup@kramer.com</dd>
-						<dt>Phone</dt>
-						<dd>+1 212-532-1256</dd>
-					</dl>
-				</address>
+					<dt>Email</dt>
+						<dd><a href="mailto:giddyup@kramer.com">giddyup@kramer.com</a></dd>
+					<dt>Phone</dt>
+						<dd><a href="tel:+1 212-532-1256"> +1 212-532-1256</a></dd>
+				</dl>
+
 			</section>
 		</div>
     </main>	
